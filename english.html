@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Wykresy COVID-19 w Polsce</title>
+    <title>Graphs on COVID-19 in Poland</title>
     <link rel="icon" href="https://raw.githubusercontent.com/filip-covid/filip-covid.github.io/main/images/virus_iconT.png">
 <!--    <link rel="icon" href="https://filip-covid.github.io/images/virus_iconT.png">
 -->
@@ -13,8 +13,8 @@
 
     
 
-    <h1>Kilka wykresów dotyczących COVID-19 w Polsce</h1>
-    <p style="color:white;">koronawirus SARS-CoV-2, covid19</p>
+    <h1>A few graphs on spread of COVID-19 in Poland</h1>
+    <p style="color:white;">coronavirus SARS-CoV-2, covid19</p>
 <!--	<p>Strona została zaktualizowania (m/d/y): <span id="demo"></span>.</p>
 	<script>
 		document.getElementById("demo").innerHTML = document.lastModified;
@@ -22,13 +22,13 @@
 	-->
 	<SCRIPT LANGUAGE="JavaScript">
 	DayName = new Array(7) 
- DayName[0] = "niedziela, " 
- DayName[1] = "poniedziałek, " 
- DayName[2] = "wtorek, " 
- DayName[3] = "środa, " 
- DayName[4] = "czwartek, " 
- DayName[5] = "piątek, " 
- DayName[6] = "sobota, "
+	DayName[0] = "Sunday, "
+	DayName[1] = "Monday, "
+	DayName[2] = "Tuesday, "
+	DayName[3] = "Wednesday, "
+	DayName[4] = "Thursday, "
+	DayName[5] = "Friday, "
+	DayName[6] = "Saturday, "
 
  MonthName = new Array(12) 
  MonthName[0] = "stycznia " 
@@ -54,15 +54,17 @@ theMinute = update.getMinutes()
 theSecond = update.getSeconds() 
 DataPoPolsku = update.toLocaleDateString()
 GodzinaPoPolsku = update.toLocaleTimeString()
-document.writeln("<I>Ostatnia aktualizacja: " + DayName[theDay] + theDate + " " + MonthName[theMonth-1] + " " + theYear + ", godz. " + GodzinaPoPolsku + " " +"</I>")
+document.writeln("<I>Last update: " + DayName[theDay] + theDate + "." + theMonth + "." + theYear + ", " + GodzinaPoPolsku + " " +"</I>")
 </SCRIPT>
 <script LANGUAGE="JavaScript">
 document.write(new Date(document.lastModified).date('d.m.Y'));
 </script>
 
 <p>
- <a href="https://filip-covid.github.io/english.html">[English version]</a> 
+ <a href="https://filip-covid.github.io/">[Polish version]</a> 
 </p>	
+
+	
 
 <!--    <p>...najpierw jakieś losowe straszne krokodyle!</p>
     <img src="https://www.kasandbox.org/programming-images/animals/crocodiles.png" alt="Scary crocodiles" width="200"/>
@@ -70,39 +72,39 @@ document.write(new Date(document.lastModified).date('d.m.Y'));
     <p>...i straszne wykresy w folderze obrazki!</p>
     <img src="https://filip-covid.github.io/images/Dobowa_liczba_wykonanych_test%C3%B3w.svg" alt="Dobowa liczba wykonanych testow" height="400"/>
 -->
-<p style="color:white;">kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni_log</p>
+<p style="color:black;">In a quarantine, currently ill, hospitalized, on a ventilator, deceased infected</p>
     <img src="https://filip-covid.github.io/images/kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni_log.svg" alt="kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni_log" height="400"/>
 <!--    <img src="https://filip-covid.github.io/images/kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni,_zmarli_z_powodu_Covid19_log.svg" alt="kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni,_zmarli_z_powodu_Covid19_log" height="400"/>
 -->
-<p style="color:white;">Powiat m. st. Warszawa</p>
+<p align="left" style="color:black;">New positive cases in the district of the Capital City of Warsaw</p>
     <img src="https://filip-covid.github.io/images/Powiat m. st. Warszawa.svg" alt="Powiat m. st. Warszawa" height="400"/>
-<p style="color:white;">Nowe_pozytywne_przypadki</p>
+<p align="left" style="color:black;">New positive cases in Poland</p>
     <img src="https://filip-covid.github.io/images/Nowe_pozytywne_przypadki.svg" alt="Nowe_pozytywne_przypadki" height="400"/>
-<p style="color:white;">Dobowa liczba wykonanych testow</p>
+<p align="left" style="color:black;">Daily number of tests performed</p>
     <img src="https://filip-covid.github.io/images/Dobowa_liczba_wykonanych_testów.svg" alt="Dobowa liczba wykonanych testow" height="400"/>
-<p style="color:white;">Odsetek_testów_pozytywnych</p>
+<p align="left" style="color:black;">Percentage of positive tests</p>
     <img src="https://filip-covid.github.io/images/Odsetek_testów_pozytywnych.svg" alt="Odsetek_testów_pozytywnych" height="400"/>
-<p style="color:white;">Liczba_osób_objętych_kwarantanną</p>
+<p align="left" style="color:black;">Number of people quarantined</p>
     <img src="https://filip-covid.github.io/images/Liczba_osób_objętych_kwarantanną.svg" alt="Liczba_osób_objętych_kwarantanną" height="400"/>
-<p style="color:white;">Liczba_aktywnych_przypadków</p>
+<p align="left" style="color:black;">Number of active cases</p>
     <img src="https://filip-covid.github.io/images/Liczba_aktywnych_przypadków.svg" alt="Liczba_aktywnych_przypadków" height="400"/>
-<p style="color:white;">Liczba_osób_hospitalizowanych</p>
+<p align="left" style="color:black;">Number of people hospitalized </p>
     <img src="https://filip-covid.github.io/images/Liczba_osób_hospitalizowanych.svg" alt="Liczba_osób_hospitalizowanych" height="400"/>
-<p style="color:white;">Liczba_zajętych_respiratorów_(stan_ciężki)</p>
+<p align="left" style="color:black;">Number of ventilators occupied</p>
     <img src="https://filip-covid.github.io/images/Liczba_zajętych_respiratorów_(stan_ciężki).svg" alt="Liczba_zajętych_respiratorów_(stan_ciężki)" height="400"/>
-<p style="color:white;">Nowe_zgony_zarażonych</p>
+<p align="left" style="color:black;">Number of deceased infected</p>
     <img src="https://filip-covid.github.io/images/Nowe_zgony_zarażonych.svg" alt="Nowe_zgony_zarażonych" height="400"/>
 <!--
-<p style="color:white;">Zmarli_z_powodu_Covid19</p>
+<p align="left" style="color:black;">Zmarli_z_powodu_Covid19</p>
     <img src="https://filip-covid.github.io/images/Zmarli_z_powodu_Covid19.svg" alt="Zmarli_z_powodu_Covid19" height="400"/>
 -->
-<p style="color:white;">Liczba_osób_objętych_nadzorem_epidemiologicznym</p>
+<p align="left" style="color:black;">Number of people under epidemiological surveillance</p>
     <img src="https://filip-covid.github.io/images/Liczba_osób_objętych_nadzorem_epidemiologicznym.svg" alt="Liczba_osób_objętych_nadzorem_epidemiologicznym" height="400"/>
-<p style="color:white;">Odsetek_podłączonych_do_respiratora_wśród_aktywnych_chorych</p>
+<p align="left" style="color:black;">Percentage of connected to ventilator among currently ill</p>
     <img src="https://filip-covid.github.io/images/Odsetek_podłączonych_do_respiratora_wśród_aktywnych_chorych.svg" alt="Odsetek_podłączonych_do_respiratora_wśród_aktywnych_chorych" height="400"/>
-<p style="color:white;">Odsetek_hospitalizowanych_wśród_aktywnych_chorych</p>
+<p align="left" style="color:black;">Percentage of hospilatized among currently ill</p>
     <img src="https://filip-covid.github.io/images/Odsetek_hospitalizowanych_wśród_aktywnych_chorych.svg" alt="Odsetek_hospitalizowanych_wśród_aktywnych_chorych" height="400"/>
-<p style="color:white;">Odsetek_podłączonych_do_respiratora_wśród_hospitalizowanych</p>
+<p align="left" style="color:black;">Percentage of connected to ventilator among hospitalized</p>
     <img src="https://filip-covid.github.io/images/Odsetek_podłączonych_do_respiratora_wśród_hospitalizowanych.svg" alt="Odsetek_podłączonych_do_respiratora_wśród_hospitalizowanych" height="400"/>
 
     
