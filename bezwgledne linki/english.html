@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Graphs on COVID-19 in Poland</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/filip-covid/filip-covid.github.io/main/images/virus_iconT.png">
+<!--    <link rel="icon" href="https://filip-covid.github.io/images/virus_iconT.png">
+-->
+</head>
+<!-- <body style="background-color:rgb(242, 242, 242);">
+-->
+<body>
+
+    
+
+    <h1>A few graphs on spread of COVID-19 in Poland</h1>
+    <p style="color:white;">coronavirus SARS-CoV-2, covid19</p>
+<!--	<p>Strona została zaktualizowania (m/d/y): <span id="demo"></span>.</p>
+	<script>
+		document.getElementById("demo").innerHTML = document.lastModified;
+	</script>
+	-->
+	<SCRIPT LANGUAGE="JavaScript">
+	DayName = new Array(7) 
+	DayName[0] = "Sunday, "
+	DayName[1] = "Monday, "
+	DayName[2] = "Tuesday, "
+	DayName[3] = "Wednesday, "
+	DayName[4] = "Thursday, "
+	DayName[5] = "Friday, "
+	DayName[6] = "Saturday, "
+
+ MonthName = new Array(12) 
+ MonthName[0] = "stycznia " 
+ MonthName[1] = "lutego " 
+ MonthName[2] = "marca " 
+ MonthName[3] = "kwietnia " 
+ MonthName[4] = "maja " 
+ MonthName[5] = "czerwca " 
+ MonthName[6] = "lipca " 
+ MonthName[7] = "sierpnia " 
+ MonthName[8] = "września " 
+ MonthName[9] = "października " 
+ MonthName[10] = "listopada " 
+ MonthName[11] = "grudnia " 
+
+update = new Date(document.lastModified)
+theMonth = update.getMonth() + 1
+theDay = update.getDay()
+theDate = update.getDate()
+theYear = update.getFullYear()
+theHour = update.getHours()
+theMinute = update.getMinutes() 
+theSecond = update.getSeconds() 
+DataPoPolsku = update.toLocaleDateString()
+GodzinaPoPolsku = update.toLocaleTimeString()
+document.writeln("<I>Last update: " + DayName[theDay] + theDate + "." + theMonth + "." + theYear + ", " + GodzinaPoPolsku + " " +"</I>")
+</SCRIPT>
+<script LANGUAGE="JavaScript">
+document.write(new Date(document.lastModified).date('d.m.Y'));
+</script>
+
+<p>
+ <a href="https://filip-covid.github.io/">[Polish version]</a> 
+</p>	
+
+	
+
+<!--    <p>...najpierw jakieś losowe straszne krokodyle!</p>
+    <img src="https://www.kasandbox.org/programming-images/animals/crocodiles.png" alt="Scary crocodiles" width="200"/>
+
+    <p>...i straszne wykresy w folderze obrazki!</p>
+    <img src="https://filip-covid.github.io/images/Dobowa_liczba_wykonanych_test%C3%B3w.svg" alt="Dobowa liczba wykonanych testow" height="400"/>
+-->
+<p style="color:black;">In a quarantine, currently ill, hospitalized, on a ventilator, deceased infected</p>
+    <img src="https://filip-covid.github.io/images/kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni_log.svg" alt="kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni_log" height="400"/>
+<!--    <img src="https://filip-covid.github.io/images/kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni,_zmarli_z_powodu_Covid19_log.svg" alt="kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni,_zmarli_z_powodu_Covid19_log" height="400"/>
+-->
+<p align="left" style="color:black;">New positive cases in the district of the Capital City of Warsaw</p>
+    <img src="https://filip-covid.github.io/images/Powiat m. st. Warszawa.svg" alt="Powiat m. st. Warszawa" height="400"/>
+<p align="left" style="color:black;">New positive cases in Poland</p>
+    <img src="https://filip-covid.github.io/images/Nowe_pozytywne_przypadki.svg" alt="Nowe_pozytywne_przypadki" height="400"/>
+<p align="left" style="color:black;">Daily number of tests performed</p>
+    <img src="https://filip-covid.github.io/images/Dobowa_liczba_wykonanych_testów.svg" alt="Dobowa liczba wykonanych testow" height="400"/>
+<p align="left" style="color:black;">Percentage of positive tests</p>
+    <img src="https://filip-covid.github.io/images/Odsetek_testów_pozytywnych.svg" alt="Odsetek_testów_pozytywnych" height="400"/>
+<p align="left" style="color:black;">Number of people quarantined</p>
+    <img src="https://filip-covid.github.io/images/Liczba_osób_objętych_kwarantanną.svg" alt="Liczba_osób_objętych_kwarantanną" height="400"/>
+<p align="left" style="color:black;">Number of active cases</p>
+    <img src="https://filip-covid.github.io/images/Liczba_aktywnych_przypadków.svg" alt="Liczba_aktywnych_przypadków" height="400"/>
+<p align="left" style="color:black;">Number of people hospitalized </p>
+    <img src="https://filip-covid.github.io/images/Liczba_osób_hospitalizowanych.svg" alt="Liczba_osób_hospitalizowanych" height="400"/>
+<p align="left" style="color:black;">Number of ventilators occupied</p>
+    <img src="https://filip-covid.github.io/images/Liczba_zajętych_respiratorów_(stan_ciężki).svg" alt="Liczba_zajętych_respiratorów_(stan_ciężki)" height="400"/>
+<p align="left" style="color:black;">Number of deceased infected</p>
+    <img src="https://filip-covid.github.io/images/Nowe_zgony_zarażonych.svg" alt="Nowe_zgony_zarażonych" height="400"/>
+<!--
+<p align="left" style="color:black;">Zmarli_z_powodu_Covid19</p>
+    <img src="https://filip-covid.github.io/images/Zmarli_z_powodu_Covid19.svg" alt="Zmarli_z_powodu_Covid19" height="400"/>
+-->
+<p align="left" style="color:black;">Number of people under epidemiological surveillance</p>
+    <img src="https://filip-covid.github.io/images/Liczba_osób_objętych_nadzorem_epidemiologicznym.svg" alt="Liczba_osób_objętych_nadzorem_epidemiologicznym" height="400"/>
+<p align="left" style="color:black;">Percentage of connected to ventilator among currently ill</p>
+    <img src="https://filip-covid.github.io/images/Odsetek_podłączonych_do_respiratora_wśród_aktywnych_chorych.svg" alt="Odsetek_podłączonych_do_respiratora_wśród_aktywnych_chorych" height="400"/>
+<p align="left" style="color:black;">Percentage of hospilatized among currently ill</p>
+    <img src="https://filip-covid.github.io/images/Odsetek_hospitalizowanych_wśród_aktywnych_chorych.svg" alt="Odsetek_hospitalizowanych_wśród_aktywnych_chorych" height="400"/>
+<p align="left" style="color:black;">Percentage of connected to ventilator among hospitalized</p>
+    <img src="https://filip-covid.github.io/images/Odsetek_podłączonych_do_respiratora_wśród_hospitalizowanych.svg" alt="Odsetek_podłączonych_do_respiratora_wśród_hospitalizowanych" height="400"/>
+
+    
+    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101292667);</script>
+<script async src="//static.getclicky.com/js"></script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101292667ns.gif" /></p></noscript>
+    </body>
+</html>
