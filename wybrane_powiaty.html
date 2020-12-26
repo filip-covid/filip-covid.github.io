@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wybrane powiaty - Wykresy COVID-19 w Polsce</title>
+<!--    <link rel="icon" href="https://raw.githubusercontent.com/filip-covid/filip-covid.github.io/main/images/virus_iconT.png">
+-->
+    <link rel="icon" href="./images/virus_iconT.png">
+
+</head>
+<!-- <body style="background-color:rgb(242, 242, 242);">
+-->
+<body>
+
+    
+
+    <h1>Kilka wykresów dotyczących COVID-19 w wybranych powiatach</h1>
+    <p style="color:white;">koronawirus SARS-CoV-2, covid19</p>
+<!--	<p>Strona została zaktualizowania (m/d/y): <span id="demo"></span>.</p>
+	<script>
+		document.getElementById("demo").innerHTML = document.lastModified;
+	</script>
+	-->
+	<SCRIPT LANGUAGE="JavaScript">
+	DayName = new Array(7) 
+ DayName[0] = "niedziela, " 
+ DayName[1] = "poniedziałek, " 
+ DayName[2] = "wtorek, " 
+ DayName[3] = "środa, " 
+ DayName[4] = "czwartek, " 
+ DayName[5] = "piątek, " 
+ DayName[6] = "sobota, "
+
+ MonthName = new Array(12) 
+ MonthName[0] = "stycznia " 
+ MonthName[1] = "lutego " 
+ MonthName[2] = "marca " 
+ MonthName[3] = "kwietnia " 
+ MonthName[4] = "maja " 
+ MonthName[5] = "czerwca " 
+ MonthName[6] = "lipca " 
+ MonthName[7] = "sierpnia " 
+ MonthName[8] = "września " 
+ MonthName[9] = "października " 
+ MonthName[10] = "listopada " 
+ MonthName[11] = "grudnia " 
+
+update = new Date(document.lastModified)
+theMonth = update.getMonth() + 1
+theDay = update.getDay()
+theDate = update.getDate()
+theYear = update.getFullYear()
+theHour = update.getHours()
+theMinute = update.getMinutes() 
+theSecond = update.getSeconds() 
+DataPoPolsku = update.toLocaleDateString()
+GodzinaPoPolsku = update.toLocaleTimeString()
+document.writeln("<I>Ostatnia aktualizacja: " + DayName[theDay] + theDate + " " + MonthName[theMonth-1] + " " + theYear + ", godz. " + GodzinaPoPolsku + " " +"</I>")
+</SCRIPT>
+<script LANGUAGE="JavaScript">
+document.write(new Date(document.lastModified).date('d.m.Y'));
+</script>
+
+<!--
+<p>
+ <a href="./english.html">[English version]</a>
+</p>	
+-->
+
+
+<p style="color:black;">Nowe pozytywne przypadki w w wybranych powiatach <br>(z podziałem na  <a href="./images/Progi_etapow_bezpieczenstwa_na100.jpeg">strefy</a> (które wejdą w życie nie wcześniej niż 18. stycznia, jeżeli cała Polska będzie w strefie zółtej lub zielonej):</p>
+
+<p style="color:black;">Powiat kętrzyński<br>
+   <img src="./images/powiaty/Powiat kętrzyński.svg" alt="Powiat kętrzyński" height="400"/>
+</p>
+
+<p style="color:black;">Powiat m.Kraków<br>
+   <img src="./images/powiaty/Powiat m.Kraków.svg" alt="Powiat m.Kraków" height="400"/>
+</p>
+
+<p style="color:black;">Powiat m.Poznań <br>
+   <img src="./images/powiaty/Powiat m.Poznań.svg" alt="Powiat m.Poznań" height="400"/>
+</p>
+
+<p style="color:black;">Powiat m.Radom<br>
+   <img src="./images/powiaty/Powiat m.Radom.svg" alt="Powiat m.Radom" height="400"/>
+</p>
+
+<p style="color:black;">Powiat sokołowski<br>
+   <img src="./images/powiaty/Powiat sokołowski.svg" alt="Powiat sokołowski" height="400"/>
+</p>
+
+<p style="color:black;">Powiat m. st. Warszawa <br>
+   <img src="./images/powiaty/Powiat m. st. Warszawa.svg" alt="Powiat m. st. Warszawa" height="400"/>
+</p>
+
+
+
+<p>
+ <a href="./zrodla.html">[Źródła]</a> 
+</p>	
+
+    
+    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101292667);</script>
+<script async src="//static.getclicky.com/js"></script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101292667ns.gif" /></p></noscript>
+    </body>
+</html>
