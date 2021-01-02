@@ -11,10 +11,61 @@
 <!-- <body style="background-color:rgb(242, 242, 242);">
 -->
 <body>
-
-    
-
     <h1>Źródła</h1>
+<!--	<p>Strona została zaktualizowania (m/d/y): <span id="demo"></span>.</p>
+	<script>
+		document.getElementById("demo").innerHTML = document.lastModified;
+	</script>
+	-->
+	<SCRIPT LANGUAGE="JavaScript">
+	DayName = new Array(7) 
+ DayName[0] = "niedziela, " 
+ DayName[1] = "poniedziałek, " 
+ DayName[2] = "wtorek, " 
+ DayName[3] = "środa, " 
+ DayName[4] = "czwartek, " 
+ DayName[5] = "piątek, " 
+ DayName[6] = "sobota, "
+
+ MonthName = new Array(12) 
+ MonthName[0] = "stycznia " 
+ MonthName[1] = "lutego " 
+ MonthName[2] = "marca " 
+ MonthName[3] = "kwietnia " 
+ MonthName[4] = "maja " 
+ MonthName[5] = "czerwca " 
+ MonthName[6] = "lipca " 
+ MonthName[7] = "sierpnia " 
+ MonthName[8] = "września " 
+ MonthName[9] = "października " 
+ MonthName[10] = "listopada " 
+ MonthName[11] = "grudnia " 
+
+update = new Date(document.lastModified)
+theMonth = update.getMonth() + 1
+theDay = update.getDay()
+theDate = update.getDate()
+theYear = update.getFullYear()
+theHour = update.getHours()
+theMinute = update.getMinutes() 
+theSecond = update.getSeconds() 
+DataPoPolsku = update.toLocaleDateString()
+GodzinaPoPolsku = update.toLocaleTimeString()
+document.writeln("<p style=\"color:white;\"><I>Ostatnia aktualizacja: " + DayName[theDay] + theDate + " " + MonthName[theMonth-1] + " " + theYear + ", godz. " + GodzinaPoPolsku + " " +"</I>")
+</SCRIPT>
+<script LANGUAGE="JavaScript">
+document.write(new Date(document.lastModified).date('d.m.Y'));
+</script>
+
+<p>
+ <a href="./index.html">[Strona główna]</a>
+ <a href="./szczepienia_en.html">[English version]</a>
+ <a href="./wybrane_powiaty.html">[Wybrane powiaty]</a>
+ <a href="./inne_wykresy.html">[Więcej wykresów]</a>
+ <a href="./szczepienia.html">[Szczepienia]</a>
+ <a href="./zrodla.html">[Źródła]</a> 
+</p>	
+<p style="color:white;">koronawirus SARS-CoV-2, covid19<, źródła</p>
 
 <p align="justify">
 Wykresy stworzyłem na podstawie danych podawanych przez Ministerstwo Zdrowia. Zostały one przepisane do arkusza kalkulacyjnego przez zespół Michała Rogalskiego. Szczegółowe informacje na temat danych są poniżej.<br>
@@ -41,7 +92,8 @@ Dane od 24.11.2020: <br>
 <a href="https://docs.google.com/spreadsheets/d/1caQLyFSQMG2B5-jwvnYk_frjBTuTPGoBsu1f2Jok-Uk/edit#gid=806524920">docs.google.com/spreadsheets/d/1caQLyFSQMG2B5-jwvnYk_frjBTuTPGoBsu1f2Jok-Uk/edit#gid=806524920</a> <br>
 Dane zebrane  przez zespół Michała Rogalskiego na podstawie raportów podawanych przez Ministerstwo Zdrowia (<a href="https://www.gov.pl/web/koronawirus/wykaz-zarazen-koronawirusem-sars-cov-2">gov.pl/web/koronawirus/wykaz-zarazen-koronawirusem-sars-cov-2</a>) </p>
 
-
+<h3> Dane dotyczące szczepień: </h3>
+<a href="https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/country_data/Poland.csv">https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/country_data/Poland.csv</a> <br>
     
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101292667);</script>
 <script async src="//static.getclicky.com/js"></script>
