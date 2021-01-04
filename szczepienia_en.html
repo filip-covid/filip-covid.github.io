@@ -68,8 +68,17 @@ document.write(new Date(document.lastModified).date('d.m.Y'));
 	
 <p>At the graphs below, the bold colourful lines are 7 day moving average of the numbers represented by thin gray lines. Zoom to see the finer grid with division on days.</p>
 <h4 style="color:black;">Sum of vaccinated people</h4>
-
+<!-- 
     <img src="./images/Suma_zaszczepionych_osób.svg" alt="Suma_zaszczepionych_osób" height="400"/>
+-->
+<!-- szerokość to 1209, wysokość 403 -->
+<div id="rolka" class="noborder" style="overflow: auto; height: 630px; width:809px;">
+<img src="./images/Suma_zaszczepionych_osób.svg" alt="Suma_zaszczepionych_osób"  height="605" width="1814"/>
+</div>
+<script type="text/javascript">
+document.getElementById('rolka').scrollLeft = 1000;
+</script>
+
 <!--    <img src="./images/kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni,_zmarli_z_powodu_Covid19_log.svg" alt="kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni,_zmarli_z_powodu_Covid19_log" height="400"/>
 -->
 <!--
