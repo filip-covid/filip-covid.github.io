@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>kontakt</title>
+<!--    <link rel="icon" href="https://raw.githubusercontent.com/filip-covid/filip-covid.github.io/main/images/virus_iconT.png">
+-->
+    <link rel="icon" href="./images/virus_iconT.png">
+
+
+</head>
+<!-- <body style="background-color:rgb(242, 242, 242);">
+-->
+<body>
+
+    
+
+    <h1>Kontakt</h1>
+<!--	<p>Strona została zaktualizowania (m/d/y): <span id="demo"></span>.</p>
+	<script>
+		document.getElementById("demo").innerHTML = document.lastModified;
+	</script>
+	-->
+	<SCRIPT LANGUAGE="JavaScript">
+	DayName = new Array(7) 
+ DayName[0] = "niedziela, " 
+ DayName[1] = "poniedziałek, " 
+ DayName[2] = "wtorek, " 
+ DayName[3] = "środa, " 
+ DayName[4] = "czwartek, " 
+ DayName[5] = "piątek, " 
+ DayName[6] = "sobota, "
+
+ MonthName = new Array(12) 
+ MonthName[0] = "stycznia " 
+ MonthName[1] = "lutego " 
+ MonthName[2] = "marca " 
+ MonthName[3] = "kwietnia " 
+ MonthName[4] = "maja " 
+ MonthName[5] = "czerwca " 
+ MonthName[6] = "lipca " 
+ MonthName[7] = "sierpnia " 
+ MonthName[8] = "września " 
+ MonthName[9] = "października " 
+ MonthName[10] = "listopada " 
+ MonthName[11] = "grudnia " 
+
+update = new Date(document.lastModified)
+theMonth = update.getMonth() + 1
+theDay = update.getDay()
+theDate = update.getDate()
+theYear = update.getFullYear()
+theHour = update.getHours()
+theMinute = update.getMinutes() 
+theSecond = update.getSeconds() 
+DataPoPolsku = update.toLocaleDateString()
+GodzinaPoPolsku = update.toLocaleTimeString()
+document.writeln("<I>Ostatnia aktualizacja: " + DayName[theDay] + theDate + " " + MonthName[theMonth-1] + " " + theYear + ", godz. " + GodzinaPoPolsku + " " +"</I>")
+</SCRIPT>
+<script LANGUAGE="JavaScript">
+document.write(new Date(document.lastModified).date('d.m.Y'));
+</script>
+
+<p>
+ <a href="./index.html">[Strona główna]</a>
+ <a href="./english.html">[English version]</a>
+ <a href="./wybrane_powiaty.html">[Wybrane powiaty]</a>
+ <a href="./inne_wykresy.html">[Więcej wykresów]</a>
+ <a href="./szczepienia.html">[Szczepienia]</a>
+ <a href="./zrodla.html">[Źródła]</a> 
+</p>	
+
+<p style="color:white;">koronawirus SARS-CoV-2, covid19</p>
+
+<p> Jeżeli widzisz błąd lub masz sugestię co należałoby zmienić napisz na:
+</p>
+<p style="color:blue;">filip-covid[małpa]protonmail.com
+</p>
+<!-- szerokość to 1209, wysokość 403 -->
+<!-- 
+<div id="rolka" class="noborder" style="overflow: auto; width:809px; height: 430px;">
+<img src="./images/kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni_log.svg" alt="kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni_log" height="403" width="1209"/>
+</div>
+<script type="text/javascript">
+document.getElementById('rolka').scrollLeft = 1000;
+</script>
+-->
+
+
+<!--
+<p>
+ <a href="./zrodla.html">[Źródła]</a> 
+</p>	
+__>
+    
+    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101292667);</script>
+<script async src="//static.getclicky.com/js"></script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101292667ns.gif" /></p></noscript>
+
+    </body>
+</html>
