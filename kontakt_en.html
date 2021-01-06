@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>kontakt</title>
+    <title>contact</title>
 <!--    <link rel="icon" href="https://raw.githubusercontent.com/filip-covid/filip-covid.github.io/main/images/virus_iconT.png">
 -->
     <link rel="icon" href="./images/virus_iconT.png">
@@ -15,7 +15,7 @@
 
     
 
-    <h1>Kontakt</h1>
+    <h1>Contact</h1>
 <!--	<p>Strona została zaktualizowania (m/d/y): <span id="demo"></span>.</p>
 	<script>
 		document.getElementById("demo").innerHTML = document.lastModified;
@@ -23,13 +23,13 @@
 	-->
 	<SCRIPT LANGUAGE="JavaScript">
 	DayName = new Array(7) 
- DayName[0] = "niedziela, " 
- DayName[1] = "poniedziałek, " 
- DayName[2] = "wtorek, " 
- DayName[3] = "środa, " 
- DayName[4] = "czwartek, " 
- DayName[5] = "piątek, " 
- DayName[6] = "sobota, "
+	DayName[0] = "Sunday, "
+	DayName[1] = "Monday, "
+	DayName[2] = "Tuesday, "
+	DayName[3] = "Wednesday, "
+	DayName[4] = "Thursday, "
+	DayName[5] = "Friday, "
+	DayName[6] = "Saturday, "
 
  MonthName = new Array(12) 
  MonthName[0] = "stycznia " 
@@ -55,27 +55,26 @@ theMinute = update.getMinutes()
 theSecond = update.getSeconds() 
 DataPoPolsku = update.toLocaleDateString()
 GodzinaPoPolsku = update.toLocaleTimeString()
-document.writeln("<I>Ostatnia aktualizacja: " + DayName[theDay] + theDate + " " + MonthName[theMonth-1] + " " + theYear + ", godz. " + GodzinaPoPolsku + " " +"</I>")
+document.writeln("<I>Last update: " + DayName[theDay] + theDate + "." + theMonth + "." + theYear + ", " + GodzinaPoPolsku + " " +"</I>")
 </SCRIPT>
 <script LANGUAGE="JavaScript">
 document.write(new Date(document.lastModified).date('d.m.Y'));
 </script>
 
 <p>
- <a href="./index.html">[Strona główna]</a>
- <a href="./kontakt_en.html">[English version]</a>
- <a href="./wybrane_powiaty.html">[Wybrane powiaty]</a>
- <a href="./inne_wykresy.html">[Więcej wykresów]</a>
- <a href="./szczepienia.html">[Szczepienia]</a>
- <a href="./zrodla.html">[Źródła]</a> 
- <a href="./kontakt.html">[Kontakt]</a> 
-</p>	
-
-<p style="color:white;">koronawirus SARS-CoV-2, covid19</p>
-
-<p> Jeżeli widzisz błąd lub masz sugestię co należałoby zmienić, napisz na:
+ <a href="./english.html">[Home page]</a>
+ <a href="./kontakt.html">[Polish version] </a> 
+ <a href="./wybrane_powiaty.html">[Selected counties (only in polish)]</a>
+ <a href="./inne_wykresy_en.html">[More graphs]</a>
+ <a href="./szczepienia_en.html">[Vaccination]</a>
+ <a href="./zrodla_en.html">[Sources]</a> 
+ <a href="./kontakt_en.html">[Contact]</a> 
 </p>
-<p style="color:blue;">filip-covid[małpa]protonmail.com
+<p style="color:white;">coronavirus SARS-CoV-2, covid19</p>
+
+<p> If you noticed a mistake or you want to give a suggestion, write me:
+</p>
+<p style="color:blue;">filip-covid[at]protonmail.com
 </p>
 <!-- szerokość to 1209, wysokość 403 -->
 <!-- 
