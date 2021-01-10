@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Graphs on deaths in Poland</title>
+<!--    <link rel="icon" href="https://raw.githubusercontent.com/filip-covid/filip-covid.github.io/main/images/virus_iconT.png">
+-->
+    <link rel="icon" href="./images/virus_iconT.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(51, 153, 255);
+   color: white;
+   text-align: center;
+}
+</style>
+
+</head>
+<!-- <body style="background-color:rgb(242, 242, 242);">
+-->
+<body>
+
+    
+
+    <h1>A few graphs on deaths in Poland</h1>
+<!--	<p>Strona została zaktualizowania (m/d/y): <span id="demo"></span>.</p>
+	<script>
+		document.getElementById("demo").innerHTML = document.lastModified;
+	</script>
+	-->
+	
+<!--
+	<SCRIPT LANGUAGE="JavaScript">
+	DayName = new Array(7) 
+ DayName[0] = "niedziela, " 
+ DayName[1] = "poniedziałek, " 
+ DayName[2] = "wtorek, " 
+ DayName[3] = "środa, " 
+ DayName[4] = "czwartek, " 
+ DayName[5] = "piątek, " 
+ DayName[6] = "sobota, "
+
+ MonthName = new Array(12) 
+ MonthName[0] = "stycznia " 
+ MonthName[1] = "lutego " 
+ MonthName[2] = "marca " 
+ MonthName[3] = "kwietnia " 
+ MonthName[4] = "maja " 
+ MonthName[5] = "czerwca " 
+ MonthName[6] = "lipca " 
+ MonthName[7] = "sierpnia " 
+ MonthName[8] = "września " 
+ MonthName[9] = "października " 
+ MonthName[10] = "listopada " 
+ MonthName[11] = "grudnia " 
+
+update = new Date(document.lastModified)
+theMonth = update.getMonth() + 1
+theDay = update.getDay()
+theDate = update.getDate()
+theYear = update.getFullYear()
+theHour = update.getHours()
+theMinute = update.getMinutes() 
+theSecond = update.getSeconds() 
+DataPoPolsku = update.toLocaleDateString()
+GodzinaPoPolsku = update.toLocaleTimeString()
+document.writeln("<I>Ostatnia aktualizacja: " + DayName[theDay] + theDate + " " + MonthName[theMonth-1] + " " + theYear + ", godz. " + GodzinaPoPolsku + " " +"</I>")
+</SCRIPT>
+<script LANGUAGE="JavaScript">
+document.write(new Date(document.lastModified).date('d.m.Y'));
+</script>
+-->
+
+<!--
+<p>
+ <a href="./english.html">[English version]</a>
+</p>	
+-->
+<p>
+<I>Last update: Saturday, 26.12.2020, 9:44:31 </I>
+(graphs updated less frequently (about once a month))
+</p>
+
+<p>
+ <a href="./english.html">[Home page]</a>
+ <a href="./zgony.html">[Polish version]</a>
+ <a href="./wybrane_powiaty.html">[Selected counties (only in polish)]</a> 
+ <a href="./zgony_en.html">[Deaths]</a>
+ <a href="./szczepienia_en.html">[Vaccination]</a>
+ <a href="./zrodla_en.html">[Sources]</a> 
+ <a href="./kontakt_en.html">[Contact]</a> 
+</p>	
+<p style="color:white;">coronavirus SARS-CoV-2, covid19</p>
+
+<p>At the graphs below, the bold colourful lines are 7 day moving average of the numbers represented by thin gray lines. Zoom to see the finer grid with division on days.</p>
+
+
+<h4 style="color:black;">Deaths in Poland in 2000-2020</h4>
+<p>Based on GUS data on the total deaths per week in the last 21 years. The red line represents the average number of deaths per day in 2020.
+<br>    <img src="./images/Zgony_w_Polsce_w_latach_2000-2020_(GUS).svg" alt="Zgony_w_Polsce_w_latach_2000-2020_(GUS)" height="400"/>
+
+</p>
+<h4 style="color:black;">Deaths in Poland in the last 5 years</h4>
+<p>Based on GUS data on the total number of deaths per week. The red line represents the average number of deaths per day in 2020.
+<br>    <img src="./images/Zgony_w_Polsce_w_latach_2015-2020_(GUS).svg" alt="Zgony_w_Polsce_w_latach_2015-2020_(GUS)" height="400"/>
+</p>
+
+
+<h4 style="color:black;">Comparison of the number of new positive Covid-19 cases, new deaths infected with Covid-19 and the number of all deaths in Poland in 2020</h4>
+<p>Based on GUS data on the total deaths per week in 2020. The red line represents the average number of deaths per day in 2020.
+<br>    <img src="./images/Nowe_pozytywne_przypadki,Nowe_zgony_zarażonych,_Liczba_wszystkich_zgonów_w_Polsce.svg" alt="Nowe_pozytywne_przypadki,Nowe_zgony_zarażonych,_Liczba_wszystkich_zgonów_w_Polsce" height="400"/>
+</p>
+
+<h4 style="color:black;">Comparison of the number of new deaths infected with Covid-19 and the number of all deaths in Poland in 2020</h4>
+<p>Based on GUS data on the total deaths per week in 2020.
+<br>    <img src="./images/Nowe_zgony_zarażonych,_Liczba_wszystkich_zgonów_w_Polsce.svg" alt="Nowe_zgony_zarażonych,_Liczba_wszystkich_zgonów_w_Polsce" height="400"/>
+</p>
+
+<h4 style="color:black;">Comparison of the number of people in a quarantine, currently ill, hospitalized, on a ventilator, deceased with diseases co-morbid with Covid-19, died due to Covid-19</h4>
+<p style="color:black;"> in colours green, blue, yellow, red, violet, black respectively. Notice that the red and blue color means different things than on the previous graphs on this subsite.<br>
+    <img src="./images/kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni,_zmarli_z_powodu_Covid19_log.svg" alt="kwarantanna,_aktywni_chorzy,_hospitalizowani,_pod_respiratorem,_zmarli_zarażeni,_zmarli_z_powodu_Covid19_log" height="400"/>
+<br>
+In the chart above, on the vertical axis the scale is logarithmic.</p>
+
+
+<h4 style="color:black;">Daily number of people died due to Covid-19</h4>
+<p>
+    <img src="./images/Zmarli_z_powodu_Covid19.svg" alt="Zmarli_z_powodu_Covid19" height="400"/>
+
+
+<!--
+</p>
+ <a href="./sources.html">[Sources]</a> 
+</p>	
+-->
+    
+    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101292667);</script>
+<script async src="//static.getclicky.com/js"></script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101292667ns.gif" /></p></noscript>
+    </body>
+     <footer>   
+ <div class="footer">
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencja Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Graphs on Covid-19 in Poland</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="filip-covid.github.io" property="cc:attributionName" rel="cc:attributionURL">filip-covid.github.io</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">(CC BY 4.0) Uznanie autorstwa 4.0 Międzynarodowe</a>.
+</div>
+</footer> 
+
+</html>
